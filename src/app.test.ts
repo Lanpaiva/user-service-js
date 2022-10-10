@@ -11,12 +11,12 @@ const corsMock = jest.fn(() => CORS_RETURN_MOCK)
 
 import { App } from "./app"
 
-jest.mock("express", () => () => expressMock)
-jest.mock("body-parser", () => bodyParserMock)
-jest.mock("cors", () => corsMock)
-jest.mock("./controller/user-controller")
+jest.mock('express', () => () => expressMock)
+jest.mock('body-parser', () => bodyParserMock)
+jest.mock('cors', () => corsMock)
+jest.mock('./controller/user-controller')
 
-describe("App tests", () => {
+describe('App tests', () => {
    test("should create and call setConfig method properly", () => {
 
     new App()
