@@ -1,4 +1,4 @@
-import { Request, Response, Router } from "express";
+import { Request, Response, Router } from 'express';
 
 export class UserController {
   private _router = Router()
